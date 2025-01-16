@@ -1,0 +1,202 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa; /* Fundo claro */
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #fdfbfb,
+    #ebedee
+  ); /* leve gradiente de fundo */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(
+    to bottom,
+    #a1c4fd,
+    #c2e9fb
+  ); /* gradiente em tons de azul claro */
+  border-right: 2px solid #ddd;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #2e86de; /* Azul */
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+  margin-bottom: 4px;
+  background: #f5faff; /* fundo levemente azulado */
+  color: #333;
+}
+
+.sidebar li:hover {
+  background-color: #dbefff; /* hover em tom mais forte */
+}
+
+.sidebar li.selected {
+  background-color: #a2d2ff;
+  font-weight: bold;
+  color: #1e3e8a;
+}
+
+/* Filtros */
+.region-filter,
+.name-filter {
+  margin-bottom: 1rem;
+}
+
+.region-filter h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #1e6091;
+}
+
+.region-filter label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #2f4858;
+}
+
+.region-filter input {
+  margin-right: 0.4rem;
+}
+
+.name-filter input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  background: #fff0f6; /* Fundo rosado claro */
+}
+
+.main-content h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #4d194d; /* Roxo escuro */
+}
+
+.main-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #7209b7; /* Roxo mais vivo */
+}
+
+/* Country Detail */
+.country-detail {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #ffd6e0;
+  border-radius: 4px;
+}
+
+.country-detail p {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+/* Forms */
+form {
+  background-color: #ffffffcc;
+  padding: 1rem;
+  border: 2px solid #ffd6e0;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #4f4f4f;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  background: #fafafa;
+}
+
+form button {
+  background-color: #ff6f59;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background-color: #d9534f;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  background-color: #ffffffcc;
+  border: 1px solid #ffd6e0;
+  padding: 0.7rem;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* NotFound Page */
+.not-found {
+  font-size: 1.5rem;
+  color: #999;
+  text-align: center;
+  margin-top: 2rem;
+}
